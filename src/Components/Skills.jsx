@@ -1,6 +1,7 @@
 import React from "react";
 
 const Skills = () => {
+
   let skillsArray = [
     {
       icon: "images/reactIconwBg.png",
@@ -33,10 +34,12 @@ const Skills = () => {
   ];
 
   return (
-    <div className="relative min-h-screen p-20  w-full flex justify-between font-[LoginFont]">
-      <span className="w-[90%] h-[1px] bg-[var(--main-color)]/10 absolute top-0"></span>
+    <div className="relative min-h-screen p-5 md:p-20 gap-5 md:gap-0  w-full  
+    flex  flex-col-reverse justify-around  md:flex-row md:justify-between  font-[LoginFont]">
 
-      <div className="mainContainer  w-[70%] p-4  flex justify-start items-start gap-12 flex-wrap overflow-hidden">
+      <span className="w-[90%] h-[1px] bg-[var(--main-color)]/50 absolute top-0"></span>
+
+      <div className="mainContainer   md:p-4  flex justify-start items-start gap-y-10 gap-x-6 md:gap-12 flex-wrap md:overflow-hidden">
        
         {skillsArray.map((skill, i) => {
           return    <div className="relative transition-all duration-200 ease-linear skillDiv w-30 h-30 hover:translate-y-2 active:scale-95 bg-[var(--main-color)] rounded-xl ">
@@ -48,7 +51,7 @@ const Skills = () => {
 
               <img src={`${skill.icon}`} className="w-[70%] "  />
             </span>
-              <h2 className="absolute bottom-[-50%] left-[10%] text-xl  text-[var(--main-color)] whitespace-nowrap select-none">-{skill.skilName}</h2>
+              <h2 className="absolute  bottom-[-35%] md:bottom-[-50%] left-[10%] text-xl  text-[var(--main-color)] whitespace-nowrap select-none">-{skill.skilName}</h2>
           </div>;
         })}
 
@@ -56,7 +59,7 @@ const Skills = () => {
       </div>
 
       {/* Titlle */}
-      <h1 className="text-3xl md:text-3xl font-bold select-none">
+      <h1 className="text-3xl  md:text-3xl font-bold select-none">
         <span className="  text-[var(--secondary-color)] mr-2">My</span>
         <span className="  text-[var(--main-color)] ">Skills...</span>
       </h1>

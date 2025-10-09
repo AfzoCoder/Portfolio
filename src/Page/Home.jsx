@@ -21,7 +21,7 @@ const Home = () => {
           onError={(e) => (e.currentTarget.style.display = "none")}
         />
       </div>
-      <PiArrowBendRightDown className="absolute right-5 bottom-5 sm:hidden"/>
+      <PiArrowBendRightDown className="absolute right-5 bottom-20 sm:hidden"/>
 
       <span className="w-[90%] h-[1px] bg-[var(--main-color)]/10 absolute bottom-0"></span>
     </div>
