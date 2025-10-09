@@ -16,7 +16,7 @@ const Home = () => {
       </div>
       <div className="h-3/4">
         <img
-          src="../../public/images/avatar2.png"
+          src="/images/avatar2.png"
           className=" sm:h-1/2 lg:h-full absolute top-0 left-0 sm:left-auto  md:right-35 z-20 "
           onError={(e) => (e.currentTarget.style.display = "none")}
         />

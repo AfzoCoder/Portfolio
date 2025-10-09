@@ -7,19 +7,19 @@ const Skills = () => {
       skilName: "React",
     },
     {
-      icon: "../../public/images/Remove_background_project-removebg-preview (1).png",
+      icon: "/images/Remove_background_project-removebg-preview (1).png",
       skilName: "Redux Toolkit",
     },
     {
-      icon: "../../public/images/react-router_logo_light (1).png",
+      icon: "/images/react-router_logo_light (1).png",
       skilName: "React Router",
     },
     {
-      icon: "../../public/images/GSAPiCON-removebg-preview.png",
+      icon: "/images/GSAPiCON-removebg-preview.png",
       skilName: "GSAP",
     },
     {
-      icon: "../../public/images/gitIcon-removebg-preview.png",
+      icon: "/images/gitIcon-removebg-preview.png",
       skilName: "Git/ GitHub",
     },
     {
