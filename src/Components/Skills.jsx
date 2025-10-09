@@ -3,7 +3,7 @@ import React from "react";
 const Skills = () => {
   let skillsArray = [
     {
-      icon: "../../public/images/reactIconwBg.png",
+      icon: "images/reactIconwBg.png",
       skilName: "React",
     },
     {
@@ -23,11 +23,11 @@ const Skills = () => {
       skilName: "Git/ GitHub",
     },
     {
-      icon: "../../public/images/tailwind-removebg-preview.png",
+      icon: "/images/tailwind-removebg-preview.png",
       skilName: "Tailwind",
     },
     {
-      icon: "../../public/images/nodeIcon-removebg-preview.png",
+      icon: "/images/nodeIcon-removebg-preview.png",
       skilName: "Node.js",
     },
   ];
