@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --bg-color: #f8f9fa;
+  --main-color: #3a5a40;
+  --secondary-color: #3a5a4072;
+}
+
+@font-face {
+  font-family: logoFont;
+  src: url(../public/Fonts/QurovaDEMO-Bold-BF67a5c637eed62.otf);
+}
+@font-face {
+  font-family: Rockybilly;
+  src: url(../public/Fonts/Rockybilly.ttf);
+}
+@font-face {
+  font-family: MuckleyBold;
+  src: url(../public/Fonts/MuckleyBold.ttf);
+}
+@font-face {
+  font-family: LoginFont;
+  src: url(../public/Fonts/Chillax-Variable.ttf);
+}
+
+.triangle-up {
+  background: rgb(255, 255, 255);
+  opacity: 40%;
+  background: white;
+  opacity: 40deg; /* same blue gradient */
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
