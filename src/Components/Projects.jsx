@@ -5,6 +5,7 @@ import Adminproject from "../assets/Admin-Project.png";
 import userproject from "../assets/User-1.png";
 import Burgerproject from "../assets/BURGER.png";
 import TicTakToe from "../assets/TTT.png";
+import POS from "../assets/POS_Syst;em.png";
 // import { IoIosArrowRoundBack } from "react-icons/io";
 import { MdKeyboardBackspace } from "react-icons/md";
 
@@ -167,6 +168,14 @@ const Projects = () => {
             toColor={"#ffe5d9"}
             link={"https://frontend-admin-logo-rho.vercel.app/"}
             heading={"Admin Pannel 🧑‍💼"}
+          />
+          <Card
+            rotate={40}
+            imgSrc={POS}
+            fromColor={"#fefae0"} 
+            toColor={"#F9B603"}
+            link={"https://pos-system-cyan-psi.vercel.app/"}
+            heading={"POS SYSTEM 💻"}
           />
         </div>
       </div>
