@@ -135,20 +135,23 @@ const Projects = () => {
           <span className="shadoweffect absolute  bottom-4 w-[90%] h-[3%] bg-white group-hover:bg-white/70 transition-all duration-450 blur-[12px] left-5 "></span>
 
           {/* Tik Tac Toh */}
-          <Card rotate={0} 
-          imgSrc={TicTakToe}
+          <Card
+            rotate={0}
+            imgSrc={TicTakToe}
             fromColor={"#bc4749"}
             toColor={"#f4f1de"}
-            link={"https://tik-tak-toh-game-7m5fjh4yd-logoprojects-projects.vercel.app/"}
+            link={
+              "https://tik-tak-toh-game-7m5fjh4yd-logoprojects-projects.vercel.app/"
+            }
             heading={"TicTakToe Game 🎮 "}
-           />
+          />
 
           <Card
             rotate={10}
             imgSrc={Burgerproject}
             fromColor={"#00b4d8"}
             toColor={"#4a5759"}
-            link={"https://afzaal-khalid.github.io/FASTFOODWEBSITE/"}
+            link={"https://static-food-web.vercel.app/"}
             heading={"Static Food Web 🍔 "}
           />
 
@@ -172,7 +175,7 @@ const Projects = () => {
           <Card
             rotate={40}
             imgSrc={POS}
-            fromColor={"#fefae0"} 
+            fromColor={"#fefae0"}
             toColor={"#F9B603"}
             link={"https://pos-system-cyan-psi.vercel.app/"}
             heading={"POS SYSTEM 💻"}
@@ -182,12 +185,20 @@ const Projects = () => {
 
       {/* Titlle -------*/}
       <h1 className="relative text-3xl md:text-3xl font-bold font-[LoginFont] select-none">
-       
-        <div className={`closeWithArrow  absolute ${isOpen ? 'opacity-100 ' : 'opacity-0'}    top-50 md:left-[70%] xl:left-[-90%] flex items-center justify-center font-extralight hover:font-semibold ease-in transition-opacity duration-2500 cursor-pointer  `}
-        onClick={()=> setisOpen(false)
-        }>Close       
-           <span className="border-2 border-[var(--main-color)] m-2 rounded-full w-12 h-12  flex justify-center items-center "  style={{ color: "var(--secondary-color)" }}>
-            <MdKeyboardBackspace   className="text-5xl text-[#3a5a4072] font-extralight" /></span></div>
+        <div
+          className={`closeWithArrow  absolute ${
+            isOpen ? "opacity-100 " : "opacity-0"
+          }    top-50 md:left-[70%] xl:left-[-90%] flex items-center justify-center font-extralight hover:font-semibold ease-in transition-opacity duration-2500 cursor-pointer  `}
+          onClick={() => setisOpen(false)}
+        >
+          Close
+          <span
+            className="border-2 border-[var(--main-color)] m-2 rounded-full w-12 h-12  flex justify-center items-center "
+            style={{ color: "var(--secondary-color)" }}
+          >
+            <MdKeyboardBackspace className="text-5xl text-[#3a5a4072] font-extralight" />
+          </span>
+        </div>
 
         <span className="  text-[var(--secondary-color)] mr-2">My</span>
         <span className="  text-[var(--main-color)] ">projects</span>
