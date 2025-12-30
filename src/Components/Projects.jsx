@@ -5,6 +5,8 @@ import Adminproject from "../assets/Admin-Project.png";
 import userproject from "../assets/User-1.png";
 import Burgerproject from "../assets/BURGER.png";
 import TicTakToe from "../assets/TTT.png";
+// import { IoIosArrowRoundBack } from "react-icons/io";
+import { MdKeyboardBackspace } from "react-icons/md";
 
 import Card from "./Card";
 import { useEffect, useRef } from "react";
@@ -170,7 +172,14 @@ const Projects = () => {
       </div>
 
       {/* Titlle -------*/}
-      <h1 className="text-3xl md:text-3xl font-bold font-[LoginFont] select-none">
+      <h1 className="relative text-3xl md:text-3xl font-bold font-[LoginFont] select-none">
+       
+        <div className={`closeWithArrow  absolute ${isOpen ? 'opacity-100 ' : 'opacity-0'}    top-50 md:left-[70%] xl:left-[-90%] flex items-center justify-center font-extralight hover:font-semibold ease-in transition-opacity duration-2500 cursor-pointer  `}
+        onClick={()=> setisOpen(false)
+        }>Close       
+           <span className="border-2 border-[var(--main-color)] m-2 rounded-full w-12 h-12  flex justify-center items-center "  style={{ color: "var(--secondary-color)" }}>
+            <MdKeyboardBackspace   className="text-5xl text-[#3a5a4072] font-extralight" /></span></div>
+
         <span className="  text-[var(--secondary-color)] mr-2">My</span>
         <span className="  text-[var(--main-color)] ">projects</span>
       </h1>
