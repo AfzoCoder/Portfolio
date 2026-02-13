@@ -31,6 +31,10 @@ const Skills = () => {
       icon: "/images/nodeIcon-removebg-preview.png",
       skilName: "Node.js",
     },
+    {
+      icon: "/images/firebase-removebg-preview.png",
+      skilName: "Firebse",
+    },
   ];
 
   return (
