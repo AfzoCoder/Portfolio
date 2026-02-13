@@ -8,7 +8,7 @@ const Card = forwardRef(
       <div
         ref={ref}
         data-rotate={rotate}
-        className={`card group absolute hover:border-2 border-black rounded-xl  m-auto mt-0.2 w-40 md:w-60 h-60 md:h-60 rotate-[${rotate}deg] 
+        className={`card group  z-10 absolute hover:border-2 border-black rounded-xl  m-auto mt-0.2 w-40 md:w-60 h-60 md:h-60 rotate-[${rotate}deg] 
                   flex justify-center items-center bg-[#fffffff6] overflow-hidden
                   `}
         style={{

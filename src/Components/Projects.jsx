@@ -122,7 +122,8 @@ const Projects = () => {
 
             <div className="CTAfolder z-1000 flex gap-2 flex-nowrap absolute bottom-[30%] md:bottom-[10%] right-[5%] md:right-[-35%] md:opacity-0 transition-all  duration-600 ease-linear md:group-hover:opacity-100 font-[LoginFont]">
               <TbArrowCurveLeft className="rotate-145 md:rotate-[-90deg] scale-125 " />
-              <h3 className="text-gray-500 md:text-black">
+              <h3 className="text-gray-500 md:text-black"
+              onClick={() => setisOpen((prev) => !prev)}>
                 {isOpen ? "Click to close" : "Click to open"}
               </h3>
             </div>
@@ -188,7 +189,7 @@ const Projects = () => {
         <div
           className={`closeWithArrow  absolute ${
             isOpen ? "opacity-100 " : "opacity-0"
-          }    top-50 md:left-[70%] xl:left-[-90%] flex items-center justify-center font-extralight hover:font-semibold ease-in transition-opacity duration-2500 cursor-pointer  `}
+          } hidden md:flex top-50 md:left-[70%] xl:left-[-90%]  items-center justify-center font-extralight hover:font-semibold ease-in transition-opacity duration-2500 cursor-pointer  `}
           onClick={() => setisOpen(false)}
         >
           Close
@@ -200,8 +201,8 @@ const Projects = () => {
           </span>
         </div>
 
-        <span className="  text-[var(--secondary-color)] mr-2">My</span>
-        <span className="  text-[var(--main-color)] ">projects</span>
+        <span className=" z-0 text-[var(--secondary-color)] mr-2">My</span>
+        <span className=" z-0 text-[var(--main-color)] ">projects</span>
       </h1>
     </div>
   );
