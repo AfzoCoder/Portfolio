@@ -35,6 +35,10 @@ const Skills = () => {
       icon: "/images/firebase-removebg-preview.png",
       skilName: "Firebse",
     },
+    {
+      icon: "/images/next.js_icon-removebg-preview.png",
+      skilName: "Next.js",
+    },
   ];
 
   return (
